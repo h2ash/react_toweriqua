@@ -4,6 +4,7 @@ import { saveUsers } from './redux/actions/actions';
 import './styles/App.scss';
 import TableOfUsers from './components/TableOfUsers';
 import PaginationButtons from './components/Pagination/PaginationButtons';
+import RandomUserFromRedux from './containers/RandomUserFromRedux';
 
 class App extends React.Component {
   state = {
@@ -66,6 +67,9 @@ class App extends React.Component {
           <TableOfUsers
             users={users}
             currentPage={currentPage}
+          />
+          <RandomUserFromRedux 
+            users={users}
           />
           <PaginationButtons
             chooseCurrentPage={this.chooseCurrentPage}
