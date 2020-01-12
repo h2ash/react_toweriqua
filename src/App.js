@@ -60,18 +60,20 @@ class App extends React.Component {
     const { currentPage, pages, arrOfPages } = this.state;
     const { users } = this.props;
     return (
-      <div className="App">
-        Text from App
-        <TableOfUsers
-          users={users}
-          currentPage={currentPage}
-        />
-        <PaginationButtons
-          chooseCurrentPage={this.chooseCurrentPage}
-          currentPage={currentPage}
-          pages={pages}
-          arrOfPages={arrOfPages}
-        />
+      <div className="app">
+        <main className='wrapper__main'>
+          Text from App
+          <TableOfUsers
+            users={users}
+            currentPage={currentPage}
+          />
+          <PaginationButtons
+            chooseCurrentPage={this.chooseCurrentPage}
+            currentPage={currentPage}
+            pages={pages}
+            arrOfPages={arrOfPages}
+          />
+        </main>
       </div>
     );
   }

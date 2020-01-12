@@ -1,8 +1,12 @@
 @import "utils/reset";
 @import "utils/vars";
 @import "button";
+@import "wrapper";
+@import "table";
 @import "../components/Pagination/pagination";
 
-.App {
-  text-align: center;
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
