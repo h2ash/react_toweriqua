@@ -1,3 +1,8 @@
+@import "utils/reset";
+@import "utils/vars";
+@import "button";
+@import "../components/Pagination/pagination";
+
 .App {
   text-align: center;
 }
