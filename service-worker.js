@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/react_toweriqua/precache-manifest.fcd4427a737e8c8eae60e404914e9ccc.js"
+  "/react_toweriqua/precache-manifest.4d72e7af26d3c06d82f2ba0f3a9abd55.js"
 );
 
 self.addEventListener('message', (event) => {
