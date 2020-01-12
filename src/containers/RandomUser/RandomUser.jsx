@@ -32,7 +32,6 @@ class RandomUser extends React.Component {
   }
 
   render() {
-    console.log(this.state.indexOfUserForShowing);
     return (
       <div className="random-user">
         Random user every 8 seconds!
