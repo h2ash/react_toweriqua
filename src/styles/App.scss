@@ -4,6 +4,8 @@
 @import "wrapper";
 @import "table";
 @import "../components/Pagination/pagination";
+@import "../containers/RandomUser/random-user";
+@import "../styles/heading";
 
 .app {
   display: flex;

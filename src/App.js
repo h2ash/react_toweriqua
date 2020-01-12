@@ -4,7 +4,7 @@ import { saveUsers } from './redux/actions/actions';
 import './styles/App.scss';
 import TableOfUsers from './components/TableOfUsers';
 import PaginationButtons from './components/Pagination/PaginationButtons';
-import RandomUserFromRedux from './containers/RandomUserFromRedux';
+import RandomUser from './containers/RandomUser/RandomUser';
 
 class App extends React.Component {
   state = {
@@ -63,12 +63,12 @@ class App extends React.Component {
     return (
       <div className="app">
         <main className='wrapper__main'>
-          Text from App
+          <h1 className="heading heading--m">Table of users</h1>
           <TableOfUsers
             users={users}
             currentPage={currentPage}
           />
-          <RandomUserFromRedux 
+          <RandomUser
             users={users}
           />
           <PaginationButtons

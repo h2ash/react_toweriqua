@@ -1,19 +1,23 @@
 import React from 'react';
 
-class RandomUserFromRedux extends React.Component {
+class RandomUser extends React.Component {
   state = {
     indexOfUserForShowing: 0,
-    nameUserForShowing: this.props.users[0],
-    surnameUserForShowing: this.props.users[0],
+    nameUserForShowing: "Want to see?",
+    surnameUserForShowing: 'Just wait!',
   }
 
   componentDidMount() {
-    setInterval(this.chooseRandomIndex, 8000);
+    this.myInterval = setInterval(this.chooseRandomIndex, 8000);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.myInterval);
   }
 
   chooseRandomIndex = () => {
-    this.setState(prevState => {
-      const newIndex = Math.floor(Math.random() * 20);
+    this.setState(() => {
+      const newIndex = Math.floor(Math.random() * (this.props.users.length + 1));
 
       return {
         indexOfUserForShowing: newIndex,
@@ -30,12 +34,12 @@ class RandomUserFromRedux extends React.Component {
   render() {
     console.log(this.state.indexOfUserForShowing);
     return (
-      <div>
-        Random user every 8 seconds:
+      <div className="random-user">
+        Random user every 8 seconds!
         <p>{this.state.nameUserForShowing} {this.state.surnameUserForShowing}</p>
       </div>
     )
   }
 }
 
-export default RandomUserFromRedux;
+export default RandomUser;
