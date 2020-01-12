@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react_toweriqua/static/css/main.d1b05096.chunk.css",
+    "main.js": "/react_toweriqua/static/js/main.a7f14cce.chunk.js",
+    "main.js.map": "/react_toweriqua/static/js/main.a7f14cce.chunk.js.map",
+    "runtime-main.js": "/react_toweriqua/static/js/runtime-main.1eb9ce7d.js",
+    "runtime-main.js.map": "/react_toweriqua/static/js/runtime-main.1eb9ce7d.js.map",
+    "static/js/2.7c11342d.chunk.js": "/react_toweriqua/static/js/2.7c11342d.chunk.js",
+    "static/js/2.7c11342d.chunk.js.map": "/react_toweriqua/static/js/2.7c11342d.chunk.js.map",
+    "index.html": "/react_toweriqua/index.html",
+    "precache-manifest.fcd4427a737e8c8eae60e404914e9ccc.js": "/react_toweriqua/precache-manifest.fcd4427a737e8c8eae60e404914e9ccc.js",
+    "service-worker.js": "/react_toweriqua/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/react_toweriqua/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.7c11342d.chunk.js.LICENSE": "/react_toweriqua/static/js/2.7c11342d.chunk.js.LICENSE",
+    "static/media/logo.svg": "/react_toweriqua/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1eb9ce7d.js",
+    "static/js/2.7c11342d.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.a7f14cce.chunk.js"
+  ]
+}
