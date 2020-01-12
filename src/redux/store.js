@@ -1,13 +1,13 @@
 import { combineReducers, createStore } from "redux";
 import { composeWithDevTools } from 'redux-devtools-extension';
-import users from './reducers/users';
+import { users } from './reducers/users';
 
-const rootRerducer = combineReducers({
+const rootReducer = combineReducers({
   users,
 });
 
 const store = createStore(
-  rootRerducer,
+  rootReducer,
   composeWithDevTools(),
 );
 
